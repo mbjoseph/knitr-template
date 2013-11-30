@@ -1,0 +1,150 @@
+Article title
+=============
+
+### List of author names
+
+*Fred H. Flintstone ([fred.flint@bru.edu](mailto:fred.flint@bru.edu)), Dept. of Biology and the Ecology Center, Bedrock University, Hollywood, CA, USA, 95555*
+
+*Homer J. Simpson ([homers@cssmn.edu](mailto:homers@cssmn.edu)), Dept. of Biology and the Ecology Center, Cal State Springfield, Minneapolis, MN, USA, 98754*
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+setwd("/home/max/Documents/knitr-template") # your working directory
+# these are the development versions of the packages - no guarantees
+library(devtools)
+install_github("knitcitations", "cboettig")
+library(knitcitations)
+refs <- read.bibtex("refs.bib")
+cite_options(linked=FALSE)
+```
+
+Abstract
+--------
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+Nam cursus. 
+Morbi ut mi. 
+Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. 
+Sed eleifend nonummy diam. 
+Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. 
+Duis tincidunt lectus quis dui viverra vestibulum. 
+Suspendisse vulputate aliquam dui. 
+Nulla elementum dui ut augue. 
+Aliquam vehicula mi at mauris. 
+Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. 
+Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. 
+Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. 
+Fusce id felis. Vivamus sollicitudin metus eget eros.
+
+Introduction
+------------
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas `r citep(refs["whitlock2010"])`.
+In posuere felis nec tortor. Pellentesque faucibus. Ut accumsan ultricies elit `r citep(list(refs["parr2005"], refs["poisot2013"]))`.
+Maecenas at justo id velit placerat molestie GenBank ([http://www.ncbi.nlm.nih.gov/genbank/](http://www.ncbi.nlm.nih.gov/genbank/)).
+
+Cras a ante vitae enim iaculis aliquam `r citep(refs["jones2006"])`.
+Mauris nunc quam, venenatis nec, euismod sit amet, egestas placerat, est `r citep(list(refs["jones2006"], refs["reichman2011"]))`.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Methods
+-------
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas `r citep(refs["whitlock2010"])`.
+In posuere felis nec tortor. Pellentesque faucibus. Ut accumsan ultricies elit `r citep(list(refs["parr2005"], refs["poisot2013"]))`.
+Maecenas at justo id velit placerat molestie GenBank ([http://www.ncbi.nlm.nih.gov/genbank/](http://www.ncbi.nlm.nih.gov/genbank/)).
+
+Cras a ante vitae enim iaculis aliquam `r citep(refs["jones2006"])`.
+Mauris nunc quam, venenatis nec, euismod sit amet, egestas placerat, est `r citep(list(refs["jones2006"], refs["reichman2011"]))`.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Results
+-------
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas `r citep(refs["whitlock2010"])`.
+In posuere felis nec tortor. Pellentesque faucibus. Ut accumsan ultricies elit `r citep(list(refs["parr2005"], refs["poisot2013"]))`.
+Maecenas at justo id velit placerat molestie GenBank ([http://www.ncbi.nlm.nih.gov/genbank/](http://www.ncbi.nlm.nih.gov/genbank/)).
+
+Cras a ante vitae enim iaculis aliquam `r citep(refs["jones2006"])`.
+Mauris nunc quam, venenatis nec, euismod sit amet, egestas placerat, est `r citep(list(refs["jones2006"], refs["reichman2011"]))`.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Hoody doody boodidy shoopy. Blah blah blah blah. They them us we you I and I. 
+Skeebidy boo bop skeebop diggitybiggity `r citep(refs["wickham2007"])`.
+
+Gonna have a list:
+
+* Do laundry
+* Take dog for walk `r citep(list(refs["borer2009"], refs["strasser2012"]))`.
+* Use the YYYY-MM-DD format (i.e., follow the [ISO 8601](http://www.iso.org/iso/support/faqs/faqs_widely_used_standards/widely_used_standards_other/iso8601) data standard).
+
+Cras a ante vitae enim iaculis aliquam `r citep(refs["jones2006"])`.
+Mauris nunc quam, venenatis nec, euismod sit amet, egestas placerat, est `r citep(list(refs["jones2006"], refs["reichman2011"]))`.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+The model fit pretty good. You can see this in the figure below. Check it out!    
+
+Hand waving
+-----------
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas `r citep(refs["whitlock2010"])`.
+In posuere felis nec tortor. Pellentesque faucibus. Ut accumsan ultricies elit `r citep(list(refs["parr2005"], refs["poisot2013"]))`.
+Maecenas at justo id velit placerat molestie GenBank ([http://www.ncbi.nlm.nih.gov/genbank/](http://www.ncbi.nlm.nih.gov/genbank/)).
+
+Cras a ante vitae enim iaculis aliquam `r citep(refs["jones2006"])`.
+Mauris nunc quam, venenatis nec, euismod sit amet, egestas placerat, est `r citep(list(refs["jones2006"], refs["reichman2011"]))`.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Conclusion
+----------
+Need to learn more about topic X. Please publish this study. 
+
+Acknowledgments
+---------------
+Thanks to Ross Peroe, Beowulf, and Beetlejuice for distracting us while we were trying to cobble together this manuscript. 
+We were unable to convince any funding sources to support this study. 
+
+References
+----------
+
+```{r results="asis", echo=FALSE} 
+bibliography(style="markdown")
+```
+
+```{r results='hide', echo=FALSE, message=FALSE}
+# doing the data analysis
+iris <- read.csv("iris.csv") # load data
+str(iris) # view structure
+
+# suppose we want to know whether the relationship between 
+# sepal length and width differs among species
+mod1 <- lm(Sepal.Width ~ Sepal.Length*Species, data=iris)
+mod2 <- lm(Sepal.Width ~ Sepal.Length + Species, data=iris)
+anova(mod1, mod2) # interaction term is significantly different from 0
+```
+
+# Tables
+
+
+```{r table1, echo=FALSE, results='asis'}
+library(xtable)
+m1.table <- xtable(mod1)
+# Coefficients
+print(m1.table, type = "html")
+```
+**Table 1:** Regression model coefficients
+
+# Figures
+
+```{r fig1, echo=FALSE, fig.width=7, fig.height=5, dpi=300, out.height=500, out.width=700}
+require(ggplot2)
+fig1 <- ggplot(iris, aes(Sepal.Length, Sepal.Width, color=Species)) + 
+  geom_point(shape=1) + theme_classic() + xlab("Sepal width") +
+  stat_smooth(method="lm", aes(fill=Species), se=F)
+fig1
+```
+**Figure 1:** Legend legend legend legend legend...
+
+```{r fig2, echo=FALSE, fig.width=8, fig.height=7, out.width=800, out.height=700, dpi=300}
+par(mfrow=c(2,2))
+plot(mod1)
+```
+**Figure 2:** Legend legend legend legend legend...
