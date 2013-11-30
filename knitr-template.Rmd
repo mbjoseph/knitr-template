@@ -133,7 +133,7 @@ print(m1.table, type = "html")
 
 # Figures
 
-```{r fig1, echo=FALSE, fig.width=7, fig.height=5, dpi=300, out.height=500, out.width=700}
+```{r fig1, echo=FALSE, fig.width=7, fig.height=5, dpi=300, out.height=500, out.width=700, message=FALSE}
 require(ggplot2)
 fig1 <- ggplot(iris, aes(Sepal.Length, Sepal.Width, color=Species)) + 
   geom_point(shape=1) + theme_classic() + xlab("Sepal width") +
