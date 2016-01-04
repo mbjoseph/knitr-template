@@ -11,6 +11,7 @@ usePackage <- function(p) {
 usePackage("knitr")
 usePackage("markdown")
 usePackage("devtools")
+usePackage('knitcitations')
 
 # convert Rmd to HTML
 knit(input = "knitr-template.Rmd", 

@@ -7,14 +7,11 @@ Article title
 
 *Homer J. Simpson ([homers@cssmn.edu](mailto:homers@cssmn.edu)), Dept. of Biology and the Ecology Center, Cal State Springfield, Minneapolis, MN, USA, 98754*
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-# these are the development versions of the packages - no guarantees
-library(devtools)
-install_github("knitcitations", "cboettig")
+```{r, echo=FALSE}
 library(knitcitations)
 refs <- read.bibtex("refs.bib")
-cite_options(linked=FALSE)
 ```
+
 
 Abstract
 --------
@@ -105,7 +102,7 @@ References
 ----------
 
 ```{r results="asis", echo=FALSE} 
-bibliography(style="markdown")
+bibliography()
 ```
 
 ```{r results='hide', echo=FALSE, message=FALSE}
